@@ -60,6 +60,11 @@ objects:
       spec:
         containers:
           - env:
+              - name: PRODUCT          
+                valueFrom:
+                  configMapKeyRef:
+                    name: ${MICROSERVICE} 
+                    key: PRODUCT
               - name: GATEWAY_API_SERVICE_URI          
                 valueFrom:
                   configMapKeyRef:
