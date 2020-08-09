@@ -8,8 +8,8 @@ config_map:
   - name: JAEGER_SAMPLER_PARAM
     value: 1
   - name: JAEGER_SAMPLER_MANAGER_HOST_PORT
-    value: "jaeger-agent.{{ project }}.svc:5778"    
+    value: "jaeger-agent.boost-services.svc:5778"    
   - name: JAEGER_AGENT_HOST
-    value: "jaeger-agent.{{ project }}.svc"  
+    value: "jaeger-agent.boost-services.svc"  
   - name: GATEWAY_API_SERVICE_URI
     value: "http://gateway-api.boost-services.svc:8080"     
